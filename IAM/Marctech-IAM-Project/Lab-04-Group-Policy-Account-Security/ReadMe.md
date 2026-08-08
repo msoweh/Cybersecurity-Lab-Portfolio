@@ -329,7 +329,7 @@ The following screenshots provide implementation and validation evidence from th
 
 ## 1. Group Policy Management
 
-[View Group Policy Management Evidence](./Screenshots/01-Group-Policy-Management.png)
+[View Group Policy Management Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-04-Group-Policy-Account-Security/Screenshots/01-Group-Policy-Management.png)
 
 This screenshot shows the Group Policy Management environment used to administer centralized security policies for the Marctech domain.
 
@@ -337,7 +337,7 @@ This screenshot shows the Group Policy Management environment used to administer
 
 ## 2. Password Policy
 
-[View Password Policy Evidence](./Screenshots/02-Password-Policy.png)
+[View Password Policy Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-04-Group-Policy-Account-Security/Screenshots/02-Password-Policy.png)
 
 This screenshot provides evidence of the centralized password security requirements configured for the Marctech domain.
 
@@ -345,7 +345,7 @@ This screenshot provides evidence of the centralized password security requireme
 
 ## 3. Account Lockout Policy
 
-[View Account Lockout Evidence](./Screenshots/03-Account-Lockout-Policy.png)
+[View Account Lockout Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-04-Group-Policy-Account-Security/Screenshots/03-Account-Lockout-Policy.png))
 
 This screenshot provides evidence of the account lockout controls configured to protect against repeated unsuccessful authentication attempts.
 
@@ -353,7 +353,7 @@ This screenshot provides evidence of the account lockout controls configured to 
 
 ## 4. Workstation Security Policy
 
-[View Workstation Security Evidence](./Screenshots/04-Workstation-Security-Policy.png)
+[View Workstation Security Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-04-Group-Policy-Account-Security/Screenshots/04-Workstation-Security-Policy.png)
 
 This screenshot provides evidence of the workstation security policy, including screen saver and password-protection settings.
 
@@ -361,7 +361,7 @@ This screenshot provides evidence of the workstation security policy, including 
 
 ## 5. Group Policy Update
 
-[View Group Policy Update Evidence](./Screenshots/05-GPUpdate-Validation.png)
+[View Group Policy Update Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-04-Group-Policy-Account-Security/Screenshots/05-GPUpdate-Application.png)
 
 This screenshot shows the execution of:
 
@@ -375,7 +375,7 @@ demonstrating that the client was instructed to refresh its Group Policy configu
 
 ## 6. Applied Group Policy Results
 
-[View Group Policy Results Evidence](./Screenshots/06-GPResult-Validation.png)
+[View Group Policy Results Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-04-Group-Policy-Account-Security/Screenshots/06-GPResult-Validation.png)
 
 This screenshot shows the output of:
 
