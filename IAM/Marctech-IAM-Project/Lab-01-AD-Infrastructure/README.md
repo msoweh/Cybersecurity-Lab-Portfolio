@@ -214,52 +214,52 @@ A key lesson from the project was that **DNS is critical to Active Directory fun
 
 # Evidence
 
-
-The following screenshots provide visual evidence of the Active Directory
-infrastructure and identity foundation established during this lab.
+The following screenshots provide implementation and validation evidence
+from the Marctech Active Directory lab environment.
 
 ## 1. DC01 Server
 
-The server used as the foundation of the Marctech Active Directory
-environment was configured as `DC01`.
+[View DC01 Server Evidence](./Screenshots/01-DC01-Server.jpg)
 
-![DC01 Server](./Screenshots/01-DC01-Server.png)
+This screenshot shows the Windows Server system used as the foundation
+of the Marctech Active Directory environment.
 
 ---
 
 ## 2. Active Directory Domain
 
-The Active Directory environment was established for the
-`marctech.local` domain.
+[View Active Directory Domain Evidence](./Screenshots/02-AD-Domain.jpg)
 
-![Active Directory Domain](./Screenshots/02-AD-Domain.png)
+This screenshot provides evidence of the `marctech.local` Active
+Directory domain established for the Marctech environment.
 
 ---
 
 ## 3. Active Directory Organizational Structure
 
-The initial Active Directory organizational structure includes the
-`Employees` and `Groups` Organizational Units.
+[View OU Structure Evidence](./Screenshots/03-AD-OU-Structure.jpg)
 
-![Active Directory OU Structure](./Screenshots/03-AD-OU-Structure.png)
+This screenshot shows the initial organizational structure containing
+the `Employees` and `Groups` Organizational Units.
 
 ---
 
 ## 4. Employee User Accounts
 
-The `Employees` OU provides the organizational location for employee
-identity objects within the Marctech environment.
+[View Employee Users Evidence](./Screenshots/04-Employee-Users.jpg)
 
-![Employee Users](./Screenshots/04-Employee-Users.png)
+This screenshot shows employee identity objects organized within the
+`Employees` OU.
 
 ---
 
 ## 5. Security Groups
 
-The `Groups` OU provides the organizational location for security groups
-used for access control and RBAC throughout the Marctech environment.
+[View Security Groups Evidence](./Screenshots/05-Security-Groups.jpg)
 
-![Security Groups](./Screenshots/05-Security-Groups.png)
+This screenshot shows the security groups organized within the `Groups`
+OU. These groups provide the foundation for access control and
+Role-Based Access Control (RBAC) in later IAM activities.
 
 ---
 
