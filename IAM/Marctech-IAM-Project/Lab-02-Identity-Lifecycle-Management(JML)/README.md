@@ -329,16 +329,6 @@ Security-group membership is used to associate users with access based on their 
 
 ---
 
-## 4. Account Change
-
-[View Account Status Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/04-Identity-Lifecycle-Change.png)
-
-This screenshot provides evidence of the employee account's(attributes) changed during the identity lifecycle process.
-
-This is an important control during employee onboarding and offboarding because it determines whether the identity is permitted to authenticate.
-
----
-
 ## 4. Mover – Department Change
 
 [View Department Change Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/04-Identity-Lifecycle-Change.png)
