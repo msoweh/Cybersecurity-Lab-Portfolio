@@ -309,7 +309,7 @@ All portfolio screenshots are maintained in PNG format.
 
 # 1. Domain Local Security Groups
 
-[View Domain Local Groups Evidence]([PASTE-ACTUAL-GITHUB-LINK-HERE](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/01-Domain-Local-Groups.png)
+[View Domain Local Groups Evidence]((https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/01-Domain-Local-Groups.png)
 
 This screenshot provides evidence of the Domain Local Security Groups created for the RBAC demonstration.
 
@@ -319,7 +319,7 @@ The groups represent the resource-access layer of the AGDLP model.
 
 # 2. Group Scope and Type
 
-[View Group Scope and Type Evidence]([PASTE-ACTUAL-GITHUB-LINK-HERE](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/02-Group-Scope-Type.png)
+[View Group Scope and Type Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/02-Group-Scope-Type.png)
 
 This screenshot provides evidence that the RBAC groups were configured with the intended Active Directory group scope and security group type.
 
@@ -327,7 +327,7 @@ This screenshot provides evidence that the RBAC groups were configured with the 
 
 # 3. IT Group Nesting
 
-[View IT Group Nesting Evidence]([PASTE-ACTUAL-GITHUB-LINK-HERE](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/03-IT-Group-Nesting.png)
+[View IT Group Nesting Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/03-IT-Group-Nesting.png)
 
 This screenshot provides evidence that `SG_IT_Users` was nested within `DL_IT_AdminTools_RW` as part of the AGDLP implementation.
 
@@ -335,7 +335,7 @@ This screenshot provides evidence that `SG_IT_Users` was nested within `DL_IT_Ad
 
 # 4. Finance Group Nesting
 
-[View Finance Group Nesting Evidence]([PASTE-ACTUAL-GITHUB-LINK-HERE](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/04-Finance-Group-Nesting.png)
+[View Finance Group Nesting Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/04-Finance-Group-Nesting.png)
 
 This screenshot provides evidence that `SG_Finance_Users` was nested within `DL_Finance_Files_RW` as part of the AGDLP implementation.
 
@@ -343,7 +343,7 @@ This screenshot provides evidence that `SG_Finance_Users` was nested within `DL_
 
 # 5. RBAC Membership Separation
 
-[View RBAC Membership Separation Evidence]([PASTE-ACTUAL-GITHUB-LINK-HERE](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/05-RBAC-Membership-Separation.png)
+[View RBAC Membership Separation Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/05-RBAC-Membership-Separation.png)
 
 This screenshot demonstrates the separation between employee identity, business-role membership, and resource access.
 
