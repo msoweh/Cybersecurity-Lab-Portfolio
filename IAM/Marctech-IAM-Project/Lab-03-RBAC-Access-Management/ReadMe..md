@@ -12,8 +12,6 @@ To address this requirement, Marctech implemented Microsoft's **AGDLP** methodol
 
 **Accounts → Global Groups → Domain Local Groups → Permissions**
 
----
-
 ## Business Objective
 
 The objective of this lab was to establish a scalable **Role-Based Access Control (RBAC)** model using Active Directory security groups and Microsoft's AGDLP methodology.
@@ -42,7 +40,6 @@ The implementation needed to:
 | Management Tools | Active Directory Users and Computers |
 | Automation / Validation | Windows PowerShell / Active Directory Module |
 
----
 
 ## Existing Identity Model
 
@@ -72,7 +69,6 @@ The implemented access model follows:
 
 This design allows administrators to manage employee membership independently from the permissions assigned to organizational resources.
 
----
 
 ## 2. Domain Local Security Groups
 
@@ -96,7 +92,6 @@ Additional resource-specific Domain Local Security Groups can be created as the 
 
 The three groups created in this lab represent the resource-access layer and are intended to receive permissions during the future File Server and NTFS Permissions implementation.
 
----
 
 ## 3. AGDLP Design
 
@@ -114,7 +109,6 @@ For example:
 
 This approach reduces the need to assign permissions directly to individual users.
 
----
 
 ## 4. Nested Group Configuration
 
@@ -138,7 +132,6 @@ These relationships establish the following access paths:
 
 The nested group structure separates business role membership from resource access permissions.
 
----
 
 ## 5. Resource Permission Model
 
@@ -172,7 +165,6 @@ When resource permissions are assigned to `DL_IT_AdminTools_RW`, members of `SG_
 
 This demonstrates how the AGDLP model separates identity management from resource authorization.
 
----
 
 ## 7. Validation & Testing
 
@@ -189,7 +181,6 @@ The Active Directory environment was reviewed to verify:
 - Nested group membership
 - Separation between Global Security Groups and Domain Local Security Groups
 
----
 
 ## 8. PowerShell Validation
 
@@ -236,7 +227,6 @@ This supports the **Principle of Least Privilege** by allowing access to be gran
 
 The model also makes employee onboarding, role changes, offboarding, and access reviews easier to manage.
 
----
 
 ## Troubleshooting
 
@@ -262,7 +252,6 @@ The effectiveness of an AGDLP design depends on the relationships between:
 
 **Accounts → Global Groups → Domain Local Groups → Permissions**
 
----
 
 ## Business Benefits
 
@@ -280,7 +269,6 @@ The RBAC and AGDLP implementation provides Marctech with several operational and
 - Preparation for File Server and NTFS permissions
 - Foundation for future identity governance capabilities
 
----
 
 ## Skills Demonstrated
 
@@ -299,7 +287,6 @@ The RBAC and AGDLP implementation provides Marctech with several operational and
 - Identity architecture
 - Access-control design
 
----
 
 ## 10. Evidence
 
@@ -315,7 +302,6 @@ This screenshot provides evidence of the Domain Local Security Groups created fo
 
 The groups represent the resource-access layer of the AGDLP model.
 
----
 
 # 2. Group Scope and Type
 
@@ -323,7 +309,6 @@ The groups represent the resource-access layer of the AGDLP model.
 
 This screenshot provides evidence that the RBAC groups were configured with the intended Active Directory group scope and security group type.
 
----
 
 # 3. IT Group Nesting
 
@@ -331,7 +316,6 @@ This screenshot provides evidence that the RBAC groups were configured with the 
 
 This screenshot provides evidence that `SG_IT_Users` was nested within `DL_IT_AdminTools_RW` as part of the AGDLP implementation.
 
----
 
 # 4. Finance Group Nesting
 
@@ -339,7 +323,6 @@ This screenshot provides evidence that `SG_IT_Users` was nested within `DL_IT_Ad
 
 This screenshot provides evidence that `SG_Finance_Users` was nested within `DL_Finance_Files_RW` as part of the AGDLP implementation.
 
----
 
 # 5. RBAC Membership Separation
 
@@ -356,8 +339,6 @@ The resulting access model follows:
 This separation supports centralized access management, easier access reviews, and the Principle of Least Privilege.
 
 
----
-
 # 6. PowerShell Validation
 
 [View PowerShell Validation Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/06-PowerShell-RBAC-Validation.png)
@@ -366,11 +347,9 @@ This screenshot provides PowerShell-based validation of the Domain Local Securit
 
 The validation demonstrates that the RBAC configuration was verified programmatically in addition to being reviewed through Active Directory Users and Computers.
 
----
 
 > **Security note:** Screenshots published in this portfolio are limited to the fictional Marctech lab environment. Sensitive credentials, passwords, personal information, and unnecessary private network information are not published.
 
----
 
 ## 11. Key Takeaway
 
