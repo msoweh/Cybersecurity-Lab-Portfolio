@@ -339,6 +339,20 @@ This is an important control during employee onboarding and offboarding because 
 
 ---
 
+## 4. Mover – Department Change
+
+[View Department Change Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/04-Identity-Lifecycle-Change.png)
+
+This screenshot provides evidence of the employee's department change from **Sales to Marketing** as part of the Mover stage of the identity lifecycle.
+
+The employee's Active Directory identity attributes were updated to reflect the new business responsibility.
+
+This demonstrates the importance of maintaining accurate identity information when an employee changes roles or departments.
+
+As part of the Mover process, the employee's existing access should also be reviewed to ensure that permissions associated with the previous role are removed when no longer required and that appropriate access for the new role is assigned.
+
+---
+
 ## 5. Account Deprovisioning
 
 [View Lifecycle Validation Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/05-Account-Deprovisioning.png)
