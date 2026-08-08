@@ -214,20 +214,58 @@ A key lesson from the project was that **DNS is critical to Active Directory fun
 
 # Evidence
 
-Evidence for this lab will include screenshots demonstrating the actual implementation and validation performed in the Marctech environment.
 
-Planned evidence includes:
+The following screenshots provide visual evidence of the Active Directory
+infrastructure and identity foundation established during this lab.
 
-* DC01 server configuration
-* Active Directory Domain Services installation
-* Domain Controller configuration
-* `marctech.local` domain
-* Active Directory Users and Computers
-* Organizational Units
-* Users and security groups
-* Domain/client validation
+## 1. DC01 Server
 
-Sensitive information will be removed or obscured before publication.
+The server used as the foundation of the Marctech Active Directory
+environment was configured as `DC01`.
+
+![DC01 Server](./Screenshots/01-DC01-Server.png)
+
+---
+
+## 2. Active Directory Domain
+
+The Active Directory environment was established for the
+`marctech.local` domain.
+
+![Active Directory Domain](./Screenshots/02-AD-Domain.png)
+
+---
+
+## 3. Active Directory Organizational Structure
+
+The initial Active Directory organizational structure includes the
+`Employees` and `Groups` Organizational Units.
+
+![Active Directory OU Structure](./Screenshots/03-AD-OU-Structure.png)
+
+---
+
+## 4. Employee User Accounts
+
+The `Employees` OU provides the organizational location for employee
+identity objects within the Marctech environment.
+
+![Employee Users](./Screenshots/04-Employee-Users.png)
+
+---
+
+## 5. Security Groups
+
+The `Groups` OU provides the organizational location for security groups
+used for access control and RBAC throughout the Marctech environment.
+
+![Security Groups](./Screenshots/05-Security-Groups.png)
+
+---
+
+> **Security note:** Screenshots published in this portfolio are limited
+> to the fictional Marctech lab environment. Sensitive credentials,
+> passwords, and unnecessary personal information are not published.
 
 ---
 
