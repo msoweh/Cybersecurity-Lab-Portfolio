@@ -185,7 +185,7 @@ User accounts were checked to confirm whether they were:
 
 Domain authentication was used to validate that active accounts could authenticate within the Marctech domain environment.
 
-Disabled-account scenarios were also reviewed to confirm that inactive identities could not be used for normal domain authentication.
+Disabled-account status was reviewed to confirm that inactive identities were no longer enabled for normal authentication
 
 ---
 
@@ -297,48 +297,66 @@ This helps maintain least privilege.
 
 The following screenshots provide implementation and validation evidence from the Marctech Identity Lifecycle Management lab environment.
 
+All portfolio screenshots are maintained in PNG format and stored within the Lab 2 `Screenshots` directory.
+
 ## 1. Employee User Accounts
 
-[View Employee User Evidence](../Lab-01-AD-Infrastructure/Screenshots/04-Employee-Users.png)
+[View Employee User Accounts Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/01-Identity-Provisioning.png)
 
-This evidence shows employee identity objects within the Marctech Active Directory environment.
+This screenshot shows the employee user accounts created within the Marctech Active Directory environment.
+
+It provides evidence of identity provisioning during the Joiner stage of the identity lifecycle.
 
 ---
 
-## 2. User Properties
+## 2. User Identity Attributes
 
-[View User Properties Evidence](./Screenshots/02-User-Properties.png)
+[View User Identity Attributes Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/02-User-Identity-Attributes.png)
 
-This screenshot should show the selected employee's Active Directory properties, including relevant identity information such as department and job title.
+This screenshot shows the selected employee's Active Directory identity attributes.
+
+The evidence demonstrates how employee information such as department and job title can be maintained as part of ongoing identity administration.
 
 ---
 
 ## 3. Security Group Membership
 
-[View Security Group Evidence](./Screenshots/03-Security-Group-Membership.png)
+[View Security Group Membership Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/03-Group-Membership.png)
 
-This screenshot provides evidence of the user's Active Directory security-group membership.
+This screenshot provides evidence of the employee's Active Directory security-group membership.
 
----
-
-## 4. Account Status
-
-[View Account Status Evidence](./Screenshots/04-Account-Status.png)
-
-This screenshot provides evidence of the account's enabled or disabled state during the lifecycle process.
+Security-group membership is used to associate users with access based on their organizational responsibilities and provides a foundation for role-based access management.
 
 ---
 
-## 5. Lifecycle Validation
+## 4. Account Change
 
-[View Lifecycle Validation Evidence](./Screenshots/05-Lifecycle-Validation.png)
+[View Account Status Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/04-Identity-Lifecycle-Change.png)
 
-This evidence documents the validation of identity lifecycle changes within the Marctech environment.
+This screenshot provides evidence of the employee account's(attributes) changed during the identity lifecycle process.
+
+This is an important control during employee onboarding and offboarding because it determines whether the identity is permitted to authenticate.
+
+---
+
+## 5. Account Deprovisioning
+
+[View Lifecycle Validation Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/05-Account-Deprovisioning.png)
+
+This screenshot provides evidence of an employee account that we disabled during the Leaver scenario. This is a essential part where user's domain identity gets deprovisioned/disabled as part of the employee offboarding process
+
+
+## 6. Lifecycle Validation
+
+[View Lifecycle Validation Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/06-Lifecycle-Validation.png)
+
+This screenshot provides evidence of the validation performed after the identity lifecycle changes.
+
+The validation confirms that the relevant Active Directory identity information, account state, or access configuration was reflected as intended.
 
 ---
 
 > **Security note:** Screenshots published in this portfolio are limited to the fictional Marctech lab environment. Sensitive credentials, passwords, personal information, and unnecessary private network information are not published.
-
 ---
 
 # Key Takeaway
