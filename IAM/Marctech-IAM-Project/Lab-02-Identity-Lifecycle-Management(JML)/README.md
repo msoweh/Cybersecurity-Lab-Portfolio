@@ -346,14 +346,6 @@ This is an important control during employee onboarding and offboarding because 
 This screenshot provides evidence of an employee account that we disabled during the Leaver scenario. This is a essential part where user's domain identity gets deprovisioned/disabled as part of the employee offboarding process
 
 
-## 6. Lifecycle Validation
-
-[View Lifecycle Validation Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-02-Identity-Lifecycle-Management(JML)/Screenshots/06-Lifecycle-Validation.png)
-
-This screenshot provides evidence of the validation performed after the identity lifecycle changes.
-
-The validation confirms that the relevant Active Directory identity information, account state, or access configuration was reflected as intended.
-
 ---
 
 > **Security note:** Screenshots published in this portfolio are limited to the fictional Marctech lab environment. Sensitive credentials, passwords, personal information, and unnecessary private network information are not published.
