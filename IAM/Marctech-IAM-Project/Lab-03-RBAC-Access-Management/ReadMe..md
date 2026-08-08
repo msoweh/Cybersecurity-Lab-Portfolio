@@ -343,9 +343,18 @@ This screenshot provides evidence that `SG_Finance_Users` was nested within `DL_
 
 # 5. Marketing Group Nesting
 
-[View Marketing Group Nesting Evidence](PASTE-ACTUAL-GITHUB-LINK-HERE)
+[View RBAC Membership Separation Evidence](PASTE-ACTUAL-GITHUB-LINK-HERE)
 
-This screenshot provides evidence that `SG_Marketing_Users` was nested within `DL_Marketing_Files_RW` as part of the AGDLP implementation.
+This screenshot demonstrates the separation between employee identity, business-role membership, and resource access.
+
+The employee is assigned to the appropriate Global Security Group rather than being directly assigned to the Domain Local resource-access group.
+
+The resulting access model follows:
+
+`User Account → Global Security Group → Domain Local Security Group → Resource Permission`
+
+This separation supports centralized access management, easier access reviews, and the Principle of Least Privilege.
+
 
 ---
 
