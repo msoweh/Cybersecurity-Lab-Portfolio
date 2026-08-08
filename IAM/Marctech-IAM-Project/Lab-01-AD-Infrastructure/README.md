@@ -219,7 +219,7 @@ from the Marctech Active Directory lab environment.
 
 ## 1. DC01 Server
 
-[View DC01 Server Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/01-DC01-Server.jpg)
+[View DC01 Server Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/01-DC01-Server.png)
 
 This screenshot shows the Windows Server system used as the foundation
 of the Marctech Active Directory environment.
@@ -228,7 +228,7 @@ of the Marctech Active Directory environment.
 
 ## 2. Active Directory Domain
 
-[View Active Directory Domain Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/02-AD-Domain.jpg)
+[View Active Directory Domain Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/02-AD-Domain.png)
 
 This screenshot provides evidence of the `marctech.local` Active
 Directory domain established for the Marctech environment.
@@ -237,7 +237,7 @@ Directory domain established for the Marctech environment.
 
 ## 3. Active Directory Organizational Structure
 
-[View OU Structure Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/03-AD-OU-Structure.jpg)
+[View OU Structure Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/03-AD-OU-Structure.png)
 
 This screenshot shows the initial organizational structure containing
 the `Employees` and `Groups` Organizational Units.
@@ -246,7 +246,7 @@ the `Employees` and `Groups` Organizational Units.
 
 ## 4. Employee User Accounts
 
-[View Employee Users Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/04-Employee-Users.jpg)
+[View Employee Users Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/04-Employee-Users.png)
 
 This screenshot shows employee identity objects organized within the
 `Employees` OU.
@@ -255,7 +255,7 @@ This screenshot shows employee identity objects organized within the
 
 ## 5. Security Groups
 
-[View Security Groups Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/05-Security-Groups.jpg)
+[View Security Groups Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-01-AD-Infrastructure/Screenshots/05-Security-Groups.png)
 
 This screenshot shows the security groups organized within the `Groups`
 OU. These groups provide the foundation for access control and
@@ -268,6 +268,7 @@ Role-Based Access Control (RBAC) in later IAM activities.
 > passwords, and unnecessary personal information are not published.
 
 ---
+
 
 # Key Takeaway
 
