@@ -171,26 +171,22 @@ to be implemented consistently.
 
 ---
 
-# Troubleshooting & Lessons Learned
+### Troubleshooting: Password Policy Enforcement
 
-During the broader Marctech environment build, several infrastructure and connectivity issues were encountered and investigated.
+During employee user creation, an account creation attempt initially
+failed because the password provided did not meet the domain's existing
+password policy requirements.
 
-Common troubleshooting tools used throughout the environment included:
+The error indicated that the password did not satisfy the required
+password length and complexity requirements.
 
-```powershell
-ipconfig
-ping
-nslookup
-```
+The password was corrected to meet the domain's existing requirements,
+after which the user account was created successfully.
 
-These tools helped validate:
-
-* IP configuration
-* Network connectivity
-* DNS resolution
-* Domain communication
-
-A key lesson from the project was that **DNS is critical to Active Directory functionality**. Domain services depend heavily on reliable name resolution, so DNS configuration must be considered when troubleshooting domain connectivity and authentication.
+**Lesson learned:** Active Directory enforces password policy requirements
+during user provisioning. Password complexity and length requirements
+help prevent weak credentials and are an important part of identity
+security.
 
 ---
 
