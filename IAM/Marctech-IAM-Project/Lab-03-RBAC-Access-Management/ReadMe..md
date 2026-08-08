@@ -309,7 +309,7 @@ All portfolio screenshots are maintained in PNG format.
 
 # 1. Domain Local Security Groups
 
-[View Domain Local Groups Evidence]((https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/01-Domain-Local-Groups.png)
+[View Domain Local Groups Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/01-Domain-Local-Groups.png)
 
 This screenshot provides evidence of the Domain Local Security Groups created for the RBAC demonstration.
 
@@ -360,7 +360,7 @@ This separation supports centralized access management, easier access reviews, a
 
 # 6. PowerShell Validation
 
-[View PowerShell Validation Evidence]([PASTE-ACTUAL-GITHUB-LINK-HERE](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/06-PowerShell-RBAC-Validation.png)
+[View PowerShell Validation Evidence](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/blob/main/IAM/Marctech-IAM-Project/Lab-03-RBAC-Access-Management/Screenshots/06-PowerShell-RBAC-Validation.png)
 
 This screenshot provides PowerShell-based validation of the Domain Local Security Groups and their configured memberships.
 
