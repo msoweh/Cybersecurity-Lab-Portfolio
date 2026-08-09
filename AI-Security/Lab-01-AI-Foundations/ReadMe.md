@@ -1,4 +1,4 @@
-# Lab 01 — AI Foundations: Applying Generative AI to MFA Security Analysis
+# Lab 01 - AI Foundations: Applying Generative AI to MFA Security Analysis
 
 ## Overview
 
