@@ -386,64 +386,75 @@ The lab also demonstrated the dependency between **DNS, Active Directory, authen
 
 # Evidence
 
+
 The following screenshots provide implementation and validation evidence from the Marctech Windows Client Deployment and Active Directory Domain Join lab.
 
 ## 1. Active Directory Domain Join
 
-[View Domain Join Evidence](./Screenshots/01-Domain-Join.png)
+[View Domain Join Success Evidence](./Screenshots/01-Domain-Join-Success.png)
 
 This screenshot shows Windows confirming that PC01 successfully joined the `marctech.local` Active Directory domain.
 
----
-
-## 2. Domain Sign-In
-
-[View Domain Sign-In Evidence](./Screenshots/02-Domain-Sign-In.png)
-
-This screenshot shows the Windows sign-in interface used to authenticate the employee using the centralized Marctech domain identity.
+This provides evidence that the workstation was successfully integrated into the organization's centralized identity environment.
 
 ---
 
-## 3. Successful Employee Authentication
+## 2. Domain User Authentication
 
-[View Employee Authentication Evidence](./Screenshots/03-Employee-Authentication.png)
+[View Domain User Authentication Evidence](./Screenshots/02-Domain-User-Authentication.png)
 
-This screenshot provides evidence of successful authentication as:
+This screenshot provides evidence of successful authentication using the centralized Marctech domain identity:
 
 ```text
 MARCTECH\marie.joan
 ```
 
----
-
-## 4. Employee Profile Creation
-
-[View Employee Profile Evidence](./Screenshots/04-Employee-Profile.png)
-
-This screenshot provides evidence that Windows successfully created Marie Joan's domain profile following first-time authentication.
+This demonstrates that the employee was able to authenticate to the Windows workstation using Active Directory credentials.
 
 ---
 
-## 5. Identity and Workstation Validation
+## 3. Identity and Workstation Validation
 
-[View Identity and Workstation Validation Evidence](./Screenshots/05-Identity-Workstation-Validation.png)
+[View Identity and Workstation Validation Evidence](./Screenshots/03-Identity-Workstation-Validation.png)
 
-This screenshot provides client-side validation of the authenticated identity and workstation configuration.
+This screenshot provides client-side validation of the authenticated identity and workstation.
 
-Where applicable, the evidence includes commands such as:
+The validation includes:
 
-```powershell
+```text
 whoami
 hostname
 ```
 
-confirming the authenticated domain identity and workstation name.
+The expected results identify the authenticated user as:
+
+```text
+MARCTECH\marie.joan
+```
+
+and the workstation as:
+
+```text
+PC01
+```
+
+This connects the employee's centralized identity to the correctly deployed workstation.
 
 ---
 
-## 6. Group Policy Validation
+## 4. Employee Profile Creation
 
-[View Group Policy Validation Evidence](./Screenshots/06-GPResult-Validation.png)
+[View Employee Profile Creation Evidence](./Screenshots/04-Employee-Profile-Creation.png)
+
+This screenshot provides evidence that Windows successfully created Marie Joan's domain user profile following her first successful authentication.
+
+The profile creation demonstrates that the domain identity was successfully recognized by the Windows client.
+
+---
+
+## 5. Group Policy Validation
+
+[View Group Policy Validation Evidence](./Screenshots/05-Group-Policy-Validation.png)
 
 This screenshot shows the output of:
 
@@ -451,25 +462,42 @@ This screenshot shows the output of:
 gpresult /r
 ```
 
-and provides evidence that the expected **Workstation Security Policy** was applied to PC01.
+The results provide evidence that the expected:
+
+```text
+Workstation Security Policy
+```
+
+was applied to PC01.
+
+This demonstrates that the workstation successfully received centralized security policy from the Marctech Active Directory environment.
 
 ---
 
-## 7. Active Directory Computer Registration
+## 6. PC01 Active Directory Registration
 
-[View PC01 Active Directory Evidence](./Screenshots/07-PC01-ADUC.png)
+[View PC01 Active Directory Evidence](./Screenshots/06-PC01-Active-Directory.png)
 
-This screenshot shows PC01 registered as a computer object within Active Directory Users and Computers.
+This screenshot shows PC01 registered as a computer object within **Active Directory Users and Computers**.
 
-This provides server-side evidence that the workstation successfully became part of the `marctech.local` domain.
+This provides server-side evidence that the workstation successfully became a member of the `marctech.local` domain.
 
 ---
 
-## 8. Employee Active Directory Account
+## 7. Marie Joan Active Directory Identity
 
-[View Marie Joan Account Evidence](./Screenshots/08-Marie-Joan-ADUC.png)
+[View Marie Joan Active Directory Evidence](./Screenshots/07-Marie-Joan-Active-Directory.png)
 
-This screenshot shows Marie Joan's Active Directory identity and provides evidence that the employee account used during workstation authentication exists within the centralized identity environment.
+This screenshot shows Marie Joan's Active Directory account and relevant identity information.
+
+Where visible, the evidence also demonstrates the employee's existing Active Directory group memberships, including:
+
+```text
+SG_IT_Users
+DL_IT_AdminTool_RW
+```
+
+This connects the employee's centralized identity and existing RBAC configuration to the workstation authentication demonstrated in this lab.
 
 ---
 
