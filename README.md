@@ -1,7 +1,7 @@
 ## Hands-On Cybersecurity Projects & Labs
 Hello, and welcome to my cybersecurity lab portfolio!
 
-I'm Marceline, focused on developing and demonstrating practical cybersecurity skills through hands-on labs, projects, troubleshooting, validation, and security-focused automation.
+This Repo focused on developing and demonstrating practical cybersecurity skills through hands-on labs, projects, troubleshooting, validation, and security-focused automation.
 
 This portfolio documents my work building and validating cybersecurity solutions in realistic, enterprise-style environments. My current area of focus is **Identity and Access Management (IAM)**, including identity lifecycle management, authentication, authorization, RBAC, Active Directory, access control, Windows security administration, and PowerShell automation.
 
