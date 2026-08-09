@@ -385,6 +385,8 @@ gpresult /r
 
 and provides validation that the expected policies were applied to the client.
 
+Evidence note: This screenshot was captured during a subsequent validation pass of the completed lab environment. It supplements the original implementation evidence by demonstrating client-side Group Policy verification.
+
 ---
 
 > **Security note:** Screenshots published in this portfolio are limited to the fictional Marctech lab environment. Sensitive credentials, passwords, personal information, and unnecessary private network information are not published.
