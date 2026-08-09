@@ -64,7 +64,7 @@ By completing this lab, I demonstrated the ability to:
 
 # Hands-On Activities
 
-## Activity 1 — AI-Assisted MFA Explanation
+## Activity 1 - AI-Assisted MFA Explanation
 
 ### Objective
 
@@ -93,7 +93,7 @@ The AI produced a business-friendly explanation using familiar examples while in
 
 ---
 
-## Activity 2 — Contextual AI Application for IT Support
+## Activity 2 - Contextual AI Application for IT Support
 
 ### Objective
 
@@ -134,7 +134,7 @@ Providing the organizational and job-role context produced a more operationally 
 
 ---
 
-# Activity 3 — AI-Assisted MFA Security Assessment
+# Activity 3 - AI-Assisted MFA Security Assessment
 
 ### Objective
 
@@ -170,7 +170,7 @@ The exercise also demonstrated the need for human review because some AI-generat
 
 ---
 
-# Activity 4 — AI Output Validation
+# Activity 4 - AI Output Validation
 
 ## Objective
 
@@ -188,7 +188,7 @@ Two claims were selected from the MFA security assessment for verification.
 
 ---
 
-## Claim 1 — MFA and Password-Based Attacks
+## Claim 1 - MFA and Password-Based Attacks
 
 ### AI-Generated Claim
 
@@ -196,7 +196,7 @@ Two claims were selected from the MFA security assessment for verification.
 
 ### Authoritative Source
 
-**CISA — Multi-Factor Authentication (MFA) guidance**
+**CISA - Multi-Factor Authentication (MFA) guidance**
 
 CISA states that MFA **mitigates common attacks against passwords such as brute-force guessing and credential stuffing** by requiring another factor in addition to the password.
 
@@ -204,7 +204,7 @@ CISA also explains that, unless an attacker can defeat the MFA authentication me
 
 ### Assessment
 
-⚠️ **PARTIALLY SUPPORTED — LANGUAGE TOO ABSOLUTE**
+⚠️ **PARTIALLY SUPPORTED - LANGUAGE TOO ABSOLUTE**
 
 ### Analyst Finding
 
@@ -224,7 +224,7 @@ The specific CISA passage reviewed also does not explicitly identify password sp
 
 ---
 
-## Claim 2 — Phishing-Resistant MFA
+## Claim 2 - Phishing-Resistant MFA
 
 ### AI-Generated Claim
 
@@ -232,7 +232,7 @@ The specific CISA passage reviewed also does not explicitly identify password sp
 
 ### Authoritative Source
 
-**NIST SP 800-63B-4 — Authentication and Authenticator Management**
+**NIST SP 800-63B-4 - Authentication and Authenticator Management**
 
 NIST identifies **WebAuthn**, which is used by authenticators implementing **FIDO2 specifications**, as an example of a standard that provides phishing resistance through **verifier name binding**.
 
@@ -340,17 +340,17 @@ The following evidence files document the hands-on AI workflow:
 
 | Evidence                                                                                                           | Description                                                                   |
 | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| [01 — MFA Basic Prompt](../Screenshots/Lab-01-AI-Foundations/01-AI-Foundations-MFA-Basic-Prompt.png)               | AI-generated explanation of MFA for a nontechnical audience                   |
-| [02 — Context Experiment](../Screenshots/Lab-01-AI-Foundations/02-AI-Foundations-MFA-Context-Experiment.png)       | AI applied to an IT support/security scenario                                 |
-| [03 — MFA Security Assessment](../Screenshots/Lab-01-AI-Foundations/03-AI-Foundations-MFA-Security-Assessment.png) | AI-assisted analysis of MFA benefits, limitations, and attack techniques      |
-| [04 — AI Output Validation](../Screenshots/Lab-01-AI-Foundations/04-AI-Foundations-MFA-Output-Validation.png)      | Human validation of AI-generated security claims using CISA and NIST guidance |
+| [01 - MFA Basic Prompt](../Screenshots/Lab-01-AI-Foundations/01-AI-Foundations-MFA-Basic-Prompt.png)               | AI-generated explanation of MFA for a nontechnical audience                   |
+| [02 - Context Experiment](../Screenshots/Lab-01-AI-Foundations/02-AI-Foundations-MFA-Context-Experiment.png)       | AI applied to an IT support/security scenario                                 |
+| [03 - MFA Security Assessment](../Screenshots/Lab-01-AI-Foundations/03-AI-Foundations-MFA-Security-Assessment.png) | AI-assisted analysis of MFA benefits, limitations, and attack techniques      |
+| [04 - AI Output Validation](../Screenshots/Lab-01-AI-Foundations/04-AI-Foundations-MFA-Output-Validation.png)      | Human validation of AI-generated security claims using CISA and NIST guidance |
 
 ---
 
 # Authoritative References
 
-* [CISA — Multi-Factor Authentication (MFA)](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3336001/esf-partners-nsa-and-cisa-release-identity-and-access-management-recommended-be/)
-* [NIST SP 800-63B-4 — Authentication and Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/)
+* [CISA - Multi-Factor Authentication (MFA)](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3336001/esf-partners-nsa-and-cisa-release-identity-and-access-management-recommended-be/)
+* [NIST SP 800-63B-4 - Authentication and Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/)
 
 ---
 
