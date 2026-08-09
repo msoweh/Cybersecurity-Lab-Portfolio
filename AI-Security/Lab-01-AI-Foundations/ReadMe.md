@@ -89,7 +89,7 @@ The AI produced a business-friendly explanation using familiar examples while in
 
 ### Evidence
 
-[View Screenshot — MFA Basic Prompt](../Screenshots/Lab-01-AI-Foundations/01-AI-Foundations-MFA-Basic-Prompt.png)
+[View Screenshot - MFA Basic Prompt](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/tree/main/AI-Security/Lab-01-AI-Foundations/01-AI-Foundations-Basic-Prompt.png)
 
 ---
 
@@ -130,7 +130,7 @@ Providing the organizational and job-role context produced a more operationally 
 
 ### Evidence
 
-[View Screenshot — Contextual MFA Exercise](../Screenshots/Lab-01-AI-Foundations/02-AI-Foundations-MFA-Context-Experiment.png)
+[View Screenshot - Contextual MFA Exercise](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/tree/main/AI-Security/Lab-01-AI-Foundations/02-AI-Foundations-MFA-Context-Experiment.png)
 
 ---
 
@@ -166,7 +166,7 @@ The exercise also demonstrated the need for human review because some AI-generat
 
 ### Evidence
 
-[View Screenshot — MFA Security Assessment](../Screenshots/Lab-01-AI-Foundations/03-AI-Foundations-MFA-Security-Assessment.png)
+[View Screenshot - MFA Security Assessment](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/tree/main/AI-Security/Lab-01-AI-Foundations/03-AI-Foundations-Security-Assessment.png)
 
 ---
 
@@ -181,6 +181,10 @@ The validation workflow was:
 **AI-generated claim → authoritative source → analyst assessment → refined statement**
 
 Two claims were selected from the MFA security assessment for verification.
+
+### Evidence
+
+[View Screenshot - AI Output Validation](https://github.com/msoweh/Cybersecurity-Lab-Portfolio/tree/main/AI-Security/Lab-01-AI-Foundations/04-AI-Foundations-MFA-Output-Validation.png)
 
 ---
 
