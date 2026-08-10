@@ -61,6 +61,22 @@ By completing this lab, I demonstrated the ability to:
 | Technical Documentation | Documented security findings and validation results                |
 
 ---
+## AI Tool & Environment
+
+**AI Assistant:** Google Gemini
+
+**Use in Lab:** Generative AI practice, cybersecurity scenario analysis, prompt experimentation, security assessment, and AI-output validation.
+
+Google Gemini was used to generate and refine responses throughout the lab. AI-generated security information was treated as an initial analytical aid rather than authoritative guidance.
+
+Selected cybersecurity claims were independently reviewed against authoritative sources, including **CISA** and **NIST**, before being included in the final security assessment.
+
+### Responsible AI Practice
+
+No sensitive, confidential, proprietary, credential, or personally identifiable information was intentionally submitted to the AI system during this lab.
+
+AI use was performed with the understanding that organizational policies and approved AI-use requirements should always be reviewed before using AI with real organizational information.
+
 
 # Hands-On Activities
 
