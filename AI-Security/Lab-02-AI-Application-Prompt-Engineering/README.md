@@ -1,614 +1,368 @@
+# Lab 02 — AI Application & Prompt Engineering
 
-# Lab 02 - AI Application and Prompt Engineering
-
-## Security Policy Summarization & Employee Guidance
-
-**Organization:** Marctech
-**Role:** Junior Cybersecurity Analyst
-**AI Assistant:** Google Gemini
-**Lab Focus:** Generative AI application, prompt engineering, source grounding, human oversight, and responsible AI use
+**Project:** AI-Security  
+**Organization:** Marctech *(fictional organization)*  
+**Role Context:** Cybersecurity / IT Security Analyst  
+**AI Tool:** Google Gemini  
+**Focus:** AI-assisted security policy analysis, prompt engineering, output validation, and human-in-the-loop review
 
 ---
 
-# 1. Overview
+## 1. Lab Overview
 
-This lab demonstrates the practical application of generative AI to a realistic cybersecurity workplace task.
+### Scenario
 
-As a Junior Cybersecurity Analyst at Marctech, I was asked to use the organization's approved generative AI assistant, Google Gemini, to assist with transforming a sanitized security policy into clear, employee-facing security guidance.
+Marctech is developing employee security awareness guidance based on its internal security policy.
 
-The objective was not to allow AI to create, modify, or approve security policy.
+As a cybersecurity analyst, I was tasked with using generative AI to assist with transforming a controlled security policy into clear employee-facing guidance.
 
-Instead, AI was used as an assistance and drafting tool while the analyst remained responsible for reviewing the generated content for accuracy, completeness, security implications, and alignment with the source policy.
+The objective was not simply to generate text with AI, but to evaluate how **prompt design, constraints, source grounding, and human review** affect the quality and security of AI-generated content.
 
-The exercise also demonstrates how prompt engineering can improve AI output by progressively introducing relevant context, audience requirements, output constraints, and review instructions.
+The exercise followed a progressive workflow:
 
----
-
-# 2. Real-World Scenario
-
-Marctech maintains security policies that define expected employee behavior when using company systems and handling security-related situations.
-
-Although these policies are important security controls, employees may have difficulty understanding technical or policy-oriented language.
-
-The cybersecurity team therefore asked a Junior Cybersecurity Analyst to create employee-friendly security guidance from a fictional and sanitized policy excerpt.
-
-The analyst uses **Google Gemini as the approved AI assistant** for this exercise.
-
-The workflow must ensure that:
-
-* Only fictional and sanitized information is provided to the AI.
-* AI does not establish or modify organizational policy.
-* Generated content remains faithful to the source policy.
-* AI-generated content is reviewed by a human.
-* Unsupported or invented requirements are identified.
-* Final guidance is reviewed before being considered suitable for employee communication.
+> **Baseline Prompt → Context & Audience → Structured Constraints → Human Review & Refinement**
 
 ---
 
-# 3. Controlled Security Policy Source
+## 2. Objectives
 
-The following fictional Marctech security policy is the **controlled source for all activities in this lab**.
+By completing this lab, I demonstrated the ability to:
 
-AI-generated outputs will be evaluated against this source to determine whether requirements were:
-
-* Preserved
-* Omitted
-* Changed
-* Misrepresented
-* Newly introduced by the AI
-
-Using a consistent source allows the analyst to evaluate whether prompt changes improve the quality and reliability of AI-generated output.
+- Apply generative AI to a practical cybersecurity task.
+- Design progressively improved prompts.
+- Provide role, audience, context, and output requirements.
+- Constrain AI output to an approved source.
+- Reduce the risk of unsupported or invented security requirements.
+- Review AI-generated security content for accuracy.
+- Identify omissions, unsupported statements, and broadened meanings.
+- Refine AI-generated content while preserving the original policy intent.
+- Apply human-in-the-loop review to AI-assisted security work.
+- Recognize security and privacy risks associated with using AI tools.
 
 ---
 
-## Marctech Security Policy - Employee Security Practices
+# 3. Controlled Marctech Security Policy
+
+The following fictional policy was used as the controlled source throughout the lab.
 
 ### Authentication
 
-* Employees must use MFA when accessing company systems that require it.
-* Employees must never approve an unexpected MFA authentication request.
-* Suspected MFA compromise must be reported to the IT/Security team.
+- Employees must use MFA when accessing company systems that require it.
+- Employees must never approve an unexpected MFA authentication request.
+- Suspected MFA compromise must be reported to the IT/Security team.
 
 ### Phishing
 
-* Employees must not provide company credentials in response to unsolicited requests.
-* Suspicious messages should be reported through the organization's approved reporting process.
+- Employees must not provide company credentials in response to unsolicited requests.
+- Suspicious messages should be reported through the organization's approved reporting process.
 
 ### Removable Media
 
-* Employees must not connect unknown or unauthorized removable media to company systems.
-* Company-approved removable media must be handled according to organizational security procedures.
+- Employees must not connect unknown or unauthorized removable media to company systems.
+- Company-approved removable media must be handled according to organizational security procedures.
 
 ### Security Incidents
 
-* Employees must promptly report suspected security incidents.
-* Employees should preserve relevant information and avoid attempting unauthorized investigation or remediation.
-
----
-
-## Source Control
-
-For consistency, the same policy source is used throughout the four activities.
-
-No real Marctech information is used.
-
-This fictional policy exists solely for educational and portfolio demonstration purposes.
-
----
-
-# 4. AI Tool & Environment
-
-**AI Assistant:** Google Gemini
-
-**Primary Use:**
-
-* Policy summarization
-* Employee guidance drafting
-* Prompt experimentation
-* Output refinement
-* AI-assisted review
-
-Google Gemini was used as the AI assistant for this exercise.
-
-AI-generated content was treated as a draft and analytical aid rather than an authoritative source.
-
-The analyst remained responsible for reviewing the output and determining whether it accurately represented the source policy.
-
----
-
-# 5. Responsible AI & Security Boundaries
-
-Cybersecurity work may involve sensitive organizational information. AI use must therefore be controlled.
-
-For this lab:
-
-* Only fictional and sanitized information was used.
-* No real credentials were provided.
-* No personally identifiable information was provided.
-* No customer information was provided.
-* No confidential organizational information was provided.
-* No real security logs were provided.
-* No internal network information was provided.
-* No proprietary source code was provided.
-
-## Real-World AI Use Requirement
-
-In a real organization, employees should use only AI tools approved by their organization and follow applicable:
-
-* AI acceptable-use policies
-* Data-classification requirements
-* Privacy requirements
-* Security requirements
-* Regulatory requirements
-* Contractual requirements
-* Data-retention requirements
-
-Employees should not independently move sensitive organizational information between different AI services simply because another service produces a preferred response.
-
-AI tool selection and permitted use should be determined by organizational policy and security governance.
-
----
-
-# 6. Objectives
-
-By completing this lab, I will demonstrate the ability to:
-
-1. Apply generative AI to a realistic cybersecurity workplace task.
-2. Use role, context, audience, and task-specific prompting.
-3. Define output structure and constraints.
-4. Iteratively refine prompts based on AI output.
-5. Evaluate AI-generated content against a defined source.
-6. Identify unsupported, ambiguous, or overly broad statements.
-7. Detect when AI introduces requirements not present in the source policy.
-8. Maintain human oversight over AI-generated security content.
-9. Apply responsible AI and data-protection considerations.
-10. Document AI-assisted work in a reproducible manner.
-
----
-
-# 7. Hands-On Activities
-
-## Activity 1 - Baseline Policy Summarization
-
-### Objective
-
-Establish a baseline AI response before introducing detailed prompting instructions.
-
-A simple prompt is used to determine how Gemini initially interprets and summarizes the controlled Marctech security policy.
-
-### Prompt Used
-
-```text
-Summarize the following Marctech security policy for employees.
-
-Marctech Security Policy - Employee Security Practices
-
-Authentication:
-- Employees must use MFA when accessing company systems that require it.
-- Employees must never approve an unexpected MFA authentication request.
-- Suspected MFA compromise must be reported to the IT/Security team.
-
-Phishing:
-- Employees must not provide company credentials in response to unsolicited requests.
-- Suspicious messages should be reported through the organization's approved reporting process.
-
-Removable Media:
-- Employees must not connect unknown or unauthorized removable media to company systems.
-- Company-approved removable media must be handled according to organizational security procedures.
-
-Security Incidents:
 - Employees must promptly report suspected security incidents.
 - Employees should preserve relevant information and avoid attempting unauthorized investigation or remediation.
-```
 
-### Skills Demonstrated
+---
 
-* Generative AI application
-* Basic prompting
-* Baseline output evaluation
-* Source-grounded summarization
+# 4. Activity 1 — Baseline AI Policy Summary
+
+## Objective
+
+Establish a baseline by asking the AI to summarize the Marctech employee security policy without extensive prompt constraints.
+
+## AI Application
+
+Google Gemini was used to generate an initial employee-facing summary of the controlled security policy.
+
+The baseline prompt provided the policy but contained limited instructions regarding role, audience, structure, and output constraints.
+
+## Analyst Observation
+
+The baseline output provided a useful starting point but demonstrated why AI-generated security content requires additional context and review.
+
+A basic prompt can produce a generally reasonable response, but the output may not be optimized for:
+
+- A specific employee audience.
+- Organizational context.
+- Consistent structure.
+- Strict source fidelity.
+- Security-specific review requirements.
 
 ### Evidence
 
-[**View Screenshot - Baseline Policy Summary**](./Screenshots/01-Baseline-Policy-Summary.png)
+[View Screenshot — Baseline Policy Summary](./Screenshots/01-Baseline-Policy-Summary.png)
 
 ---
 
-## Activity 2 - Role, Audience & Context Prompting
+# 5. Activity 2 — Role, Audience & Context Prompting
 
-### Objective
+## Objective
 
-Improve the AI response by explicitly defining the analyst's role, organizational context, target audience, and purpose.
+Determine whether explicitly defining the AI's role, intended audience, organizational context, and scope improves the usefulness of the generated guidance.
 
-The same controlled Marctech security policy will be provided to Gemini.
+## Prompting Approach
 
-### Prompt Used
+Gemini was instructed to act as a junior cybersecurity analyst supporting Marctech and to produce employee-facing guidance for users with basic technical knowledge.
 
-```text
-Act as a junior cybersecurity analyst supporting Marctech.
+The prompt also explicitly required the AI to:
 
-Using only the fictional security policy provided below, create an employee-facing summary for employees with basic technical knowledge.
+- Use plain language.
+- Avoid unnecessary cybersecurity jargon.
+- Use only the supplied policy.
+- Avoid creating new security requirements.
 
-The goal is to help employees understand what the policy requires and what actions they should take.
+## Analyst Observation
 
-Use plain language and avoid unnecessary cybersecurity jargon.
+The resulting output was more targeted toward the intended audience.
 
-Do not create new security requirements that are not present in the source policy.
+The response used clearer employee-oriented sections such as:
 
-Use only the following controlled Marctech security policy:
+- System Logins (MFA)
+- Phishing & Suspicious Messages
+- USBs & Removable Drives
+- Handling Security Incidents
 
-Marctech Security Policy - Employee Security Practices
+The output also became more action-oriented.
 
-Authentication:
-- Employees must use MFA when accessing company systems that require it.
-- Employees must never approve an unexpected MFA authentication request.
-- Suspected MFA compromise must be reported to the IT/Security team.
+However, human review remained necessary.
 
-Phishing:
-- Employees must not provide company credentials in response to unsolicited requests.
-- Suspicious messages should be reported through the organization's approved reporting process.
+For example, the AI broadened the phishing requirement by using language such as usernames and passwords, while the controlled policy specifically addressed providing company credentials in response to unsolicited requests.
 
-Removable Media:
-- Employees must not connect unknown or unauthorized removable media to company systems.
-- Company-approved removable media must be handled according to organizational security procedures.
-
-Security Incidents:
-- Employees must promptly report suspected security incidents.
-- Employees should preserve relevant information and avoid attempting unauthorized investigation or remediation.
-```
-
-### Skills Demonstrated
-
-* Role prompting
-* Context prompting
-* Audience specification
-* Task definition
-* Scope control
-* Source grounding
+This demonstrated that **better prompting improves usefulness but does not guarantee exact policy fidelity.**
 
 ### Evidence
 
-[**View Screenshot - Role, Audience & Context Prompt**](./Screenshots/02-Role-Audience-Context-Prompt.png)
+[View Screenshot — Role, Audience & Context Prompt](./Screenshots/02-Role-Audience-Context-Prompt.png)
 
 ---
 
-## Activity 3 - Structured Output & Security Constraints
+# 6. Activity 3 — Structured Output & Security Constraints
 
-### Objective
+## Objective
 
-Use a structured prompt to control the format, scope, tone, and security requirements of the AI-generated employee guidance.
+Evaluate whether explicit structure and security constraints can further control AI-generated content.
 
-The controlled Marctech policy remains the source of truth.
+## Prompting Approach
 
-### Prompt Used
+The AI was instructed to create employee guidance for each policy topic using a defined structure:
 
-```text
-Act as a cybersecurity awareness specialist supporting Marctech.
+1. Security requirement.
+2. Plain-language explanation.
+3. What the employee should do.
+4. What the employee should avoid doing.
+5. When the employee should contact IT or Security.
 
-Using only the controlled Marctech security policy provided below, create an employee-facing security guidance document.
+Additional constraints required the AI to:
 
-For each policy topic:
-
-1. Identify the security requirement.
-2. Explain what it means to an employee in plain language.
-3. State what the employee should do.
-4. State what the employee should avoid doing.
-5. Explain when the employee should contact IT or Security.
-
-Cover the following topics:
-
-- Authentication and MFA
-- Phishing
-- Removable media
-- Security incident reporting
-
-Requirements:
-
-- Use clear headings.
-- Use concise bullet points.
-- Write for employees with basic technical knowledge.
-- Avoid unnecessary technical terminology.
-- Do not exaggerate security risks.
-- Do not create new security requirements.
-- Do not remove or change the meaning of requirements in the source policy.
-- If the source policy does not provide enough information to answer something, clearly identify that limitation rather than inventing an answer.
-- Use only the information contained in the controlled policy.
-
-Controlled Marctech Security Policy:
-
-Authentication:
-- Employees must use MFA when accessing company systems that require it.
-- Employees must never approve an unexpected MFA authentication request.
-- Suspected MFA compromise must be reported to the IT/Security team.
-
-Phishing:
-- Employees must not provide company credentials in response to unsolicited requests.
-- Suspicious messages should be reported through the organization's approved reporting process.
-
-Removable Media:
-- Employees must not connect unknown or unauthorized removable media to company systems.
-- Company-approved removable media must be handled according to organizational security procedures.
-
-Security Incidents:
-- Employees must promptly report suspected security incidents.
-- Employees should preserve relevant information and avoid attempting unauthorized investigation or remediation.
-```
-
-### Skills Demonstrated
-
-* Structured prompting
-* Output constraints
-* Scope control
-* Source fidelity
-* Source grounding
-* Security-aware prompting
-* Instruction design
-
-### Evidence
-
-[**View Screenshot - Structured Policy Guidance**](./Screenshots/03-Structured-Policy-Guidance.png)
-
----
-
-## Activity 4 - Human Review & Iterative Prompt Refinement
-
-### Objective
-
-Review the AI-generated guidance against the controlled Marctech security policy and identify potential problems before producing the final version.
-
-The analyst evaluates the AI output for:
-
-* Unsupported claims
-* Missing policy requirements
-* Overly broad statements
-* Changed or distorted meaning
-* Invented security requirements
-* Ambiguous employee instructions
-* Excessive technical terminology
-
-### Prompt Used
-
-```text
-Review the previous employee security guidance against the controlled
-Marctech security policy.
-
-Identify:
-
-1. Any statements that are unsupported by the source policy.
-2. Any policy requirements that were omitted.
-3. Any statements that changed or broadened the original meaning.
-4. Any newly introduced security requirements.
-5. Any instructions that could be misunderstood by employees.
-6. Any terminology that is unnecessarily technical.
-
-For each issue identified:
-
-- Quote or identify the relevant statement from the previous response.
-- Compare it with the applicable requirement in the source policy.
-- Explain why the statement should be corrected.
-- State whether the issue is an omission, unsupported addition,
-  changed meaning, ambiguity, or terminology issue.
-
-If no issue exists for a category, explicitly state that no issue
-was identified.
-
-After completing the review, produce a revised employee guidance
-document.
-
-Requirements for the revised version:
-
-- Remain faithful to the controlled Marctech security policy.
-- Do not introduce new security requirements.
-- Do not remove required security actions.
-- Do not broaden or change the meaning of policy requirements.
+- Use only the controlled policy.
+- Avoid creating new security requirements.
+- Avoid changing the meaning of requirements.
+- Avoid exaggerating security risks.
+- Identify limitations instead of inventing information.
 - Use clear employee-friendly language.
-- Avoid unnecessary technical terminology.
-- Clearly identify information that cannot be determined from the
-  source policy.
-- Do not claim that information has been verified unless it was
-  actually verified.
 
-Controlled Marctech Security Policy:
+## Analyst Observation
 
-Authentication:
+This activity demonstrated how structured prompting can make AI output more predictable and easier to review.
 
-- Employees must use MFA when accessing company systems that require it.
-- Employees must never approve an unexpected MFA authentication request.
-- Suspected MFA compromise must be reported to the IT/Security team.
+The explicit constraints established a stronger boundary around the AI's response and reduced the likelihood of unsupported recommendations being presented as Marctech policy.
 
-Phishing:
+The exercise also reinforced an important security principle:
 
-- Employees must not provide company credentials in response to unsolicited requests.
-- Suspicious messages should be reported through the organization's approved reporting process.
-
-Removable Media:
-
-- Employees must not connect unknown or unauthorized removable media to company systems.
-- Company-approved removable media must be handled according to organizational security procedures.
-
-Security Incidents:
-
-- Employees must promptly report suspected security incidents.
-- Employees should preserve relevant information and avoid attempting unauthorized investigation or remediation.
-```
-
-### Skills Demonstrated
-
-* Iterative prompt engineering
-* Human-in-the-loop review
-* AI output evaluation
-* Unsupported-claim detection
-* Source validation
-* Security content review
-* Prompt refinement
+> **Prompt constraints can reduce AI-generated errors, but they do not replace human validation.**
 
 ### Evidence
 
-[**View Screenshot - Human Review & Prompt Refinement**](./Screenshots/04-Human-Review-Prompt-Refinement.png)
+[View Screenshot — Structured Policy Guidance](./Screenshots/03-Structured-Policy-Guidance.png)
 
 ---
 
-# 8. AI-Assisted Security Workflow
+# 7. Activity 4 — Human Review & Iterative Prompt Refinement
 
-```text
-Controlled Marctech Security Policy
-              |
-              v
-      Approved AI Assistant
-          Google Gemini
-              |
-              v
-       Baseline Prompt
-              |
-              v
-       AI-Generated Draft
-              |
-              v
-    Role + Context + Audience
-              |
-              v
-    Structured Requirements
-              |
-              v
-      AI-Generated Guidance
-              |
-              v
-         Human Review
-              |
-              v
-       Prompt Refinement
-              |
-              v
-    Policy-to-Output Verification
-              |
-              v
-    Reviewed Employee Guidance
-```
+## Objective
 
-The AI assists with drafting and transformation of information.
+Review the previous AI-generated employee guidance against the controlled Marctech security policy and identify potential problems before producing a refined version.
 
-The controlled security policy remains the source of truth.
+## Review Criteria
 
-The analyst remains responsible for reviewing the output.
+The AI was instructed to identify:
 
----
+- Unsupported statements.
+- Omitted policy requirements.
+- Statements that changed or broadened the original meaning.
+- Newly introduced security requirements.
+- Potentially confusing employee instructions.
+- Unnecessarily technical terminology.
 
-# 9. Prompt Engineering Techniques Demonstrated
+The AI was then instructed to produce a revised employee guidance document while remaining faithful to the controlled policy.
 
-| Technique              | Application                                                      |
-| ---------------------- | ---------------------------------------------------------------- |
-| Role prompting         | Defines the cybersecurity role the AI should simulate            |
-| Context setting        | Provides the organizational and business context                 |
-| Audience specification | Defines who will consume the final output                        |
-| Task definition        | Clearly explains what the AI must produce                        |
-| Output constraints     | Controls structure, length, and formatting                       |
-| Scope control          | Prevents the AI from expanding beyond the source                 |
-| Source grounding       | Requires the output to remain aligned with the controlled policy |
-| Iterative refinement   | Uses review findings to improve the next prompt                  |
-| Negative instructions  | Explicitly identifies actions the AI must avoid                  |
-| Human review           | Analyst evaluates AI output before acceptance                    |
+## AI Review Findings
+
+Gemini identified several issues in the previous response, including:
+
+### Unsupported Addition
+
+The AI identified speculation about an unexpected MFA request potentially indicating that another person was attempting to access the account.
+
+The controlled policy did not make that assertion.
+
+### Broadened Policy Meaning
+
+Gemini identified that previous language regarding sharing usernames or passwords could broaden the original phishing requirement.
+
+The controlled policy specifically addressed providing company credentials in response to unsolicited requests.
+
+### Potential Ambiguity
+
+Gemini identified that specifying examples such as files, messages, or notes could unintentionally narrow the broader requirement to preserve relevant information.
+
+### Technical Terminology
+
+Gemini identified the use of the term "remediation" as potentially unnecessary for employees with basic technical knowledge.
 
 ---
 
-# 10. Security Considerations
+## Human Analyst Validation
 
-## AI Is Not the Source of Truth
+The AI-generated review was not automatically accepted as authoritative.
 
-The controlled Marctech security policy remains the authoritative source for this exercise.
+The revised AI guidance itself required additional human review.
 
-AI-generated content must not override the source policy.
+For example, the controlled policy states:
 
-## Human Review Is Required
+> Employees must promptly report suspected security incidents.
 
-AI-generated cybersecurity content should be reviewed before being used operationally or distributed to employees.
+The revised AI guidance changed this to:
 
-## Prevent Policy Drift
+> Report any suspected security problem immediately.
 
-The AI must not introduce new security requirements that are not supported by the source material.
+### Analyst Finding
 
-## Protect Sensitive Information
+"Immediately" is stronger than the source policy's "promptly."
 
-Real credentials, confidential information, PII, customer data, internal security configurations, or other restricted information should not be submitted to an AI system unless explicitly authorized by organizational policy and appropriate security controls.
+The wording should therefore be reviewed and aligned with the original policy rather than automatically accepted.
 
-## Use Approved AI Tools
+This demonstrated that **AI can assist with reviewing AI-generated content, but the AI's review also requires human validation.**
 
-Employees should use only AI services approved by their organization for the specific business use case.
+### Evidence
 
-The organization should determine which information may be entered into the approved AI environment based on its security, privacy, and data-governance requirements.
-
----
-
-# 11. Evidence
-
-All screenshots are stored in the lab's dedicated `Screenshots` directory.
-
-| Evidence                                                                                     | Description                                                                           |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [01 - Baseline Policy Summary](./Screenshots/01-Baseline-Policy-Summary.png)                 | Baseline Gemini response using the controlled policy and a basic summarization prompt |
-| [02 - Role, Audience & Context](./Screenshots/02-Role-Audience-Context-Prompt.png)           | Gemini response after adding role, context, audience, and scope                       |
-| [03 - Structured Policy Guidance](./Screenshots/03-Structured-Policy-Guidance.png)           | Gemini response using structured output requirements and security constraints         |
-| [04 - Human Review & Prompt Refinement](./Screenshots/04-Human-Review-Prompt-Refinement.png) | AI-assisted review and iterative prompt refinement                                    |
+[View Screenshot — Human Review & Prompt Refinement](./Screenshots/04-Human-Review-Prompt-Refinement.png)
 
 ---
 
-# 12. Skills Demonstrated
+# 8. Prompt Engineering Progression
 
-## Artificial Intelligence
+The four activities demonstrated a progressive improvement in prompt design.
 
-* Generative AI
-* Prompt engineering
-* Context engineering
-* Source grounding
-* AI-assisted content generation
-* Iterative prompting
-* AI output evaluation
+| Activity | Prompting Technique | Primary Purpose |
+|---|---|---|
+| Activity 1 | Baseline prompt | Establish baseline AI output |
+| Activity 2 | Role + audience + context | Improve relevance and usability |
+| Activity 3 | Structure + constraints | Improve consistency and source fidelity |
+| Activity 4 | Review + refinement | Identify and correct AI-generated issues |
 
-## Cybersecurity
+### Key Observation
 
-* Security policy awareness
-* Security awareness communication
-* Source validation
-* Security control interpretation
-* Security risk awareness
-* Data protection awareness
-* Human-in-the-loop security workflows
+Increasing prompt specificity improved the usefulness and structure of the AI-generated responses.
 
-## Professional Skills
+However:
 
-* Technical communication
-* Requirements interpretation
-* Critical thinking
-* Quality assurance
-* Documentation
-* Responsible technology use
+> **More detailed prompting did not eliminate the need for human review.**
+
+This is particularly important when AI is used for cybersecurity policies, procedures, employee instructions, or other security-sensitive content.
 
 ---
 
-# 13. Outcome
+# 9. Security & Privacy Considerations
 
-This lab demonstrates how generative AI can be incorporated into a cybersecurity workflow as a productivity and drafting assistant while maintaining appropriate security boundaries and human oversight.
+Generative AI should not automatically be treated as an approved destination for organizational information.
 
-The exercise demonstrates that effective AI use involves more than obtaining an answer from an AI system.
+This lab used a **fictional Marctech security policy** specifically to avoid exposing real organizational information.
 
-The workflow is:
+No real:
 
-**Controlled Source → Context → Prompt Design → AI Output → Human Review → Refinement → Validation**
+- Passwords
+- Credentials
+- Personally identifiable information
+- Confidential business information
+- Security keys
+- Authentication tokens
+- Production security configurations
+- Sensitive incident information
 
-The analyst remains accountable for the accuracy, security, and appropriateness of the resulting employee guidance.
+were used in the exercise.
+
+### Real-World Security Consideration
+
+Before using an AI service for organizational work, employees should follow applicable:
+
+- Organizational AI-use policies.
+- Data classification requirements.
+- Acceptable-use policies.
+- Privacy requirements.
+- Security procedures.
+- Approved AI-tool requirements.
+
+Employees should verify with their employer or organization's security and compliance policies before submitting organizational information to an AI system.
+
+Only information approved for the specific AI service should be provided.
 
 ---
 
-# 14. Portfolio Takeaway
+# 10. Key Skills Demonstrated
 
-> **Applied Google Gemini to a controlled cybersecurity documentation workflow using source grounding, structured prompt engineering, iterative refinement, and human review to transform a fictional security policy into employee-facing guidance without allowing AI to establish or modify security requirements.**
+### AI & Prompt Engineering
+
+- Generative AI fundamentals.
+- Prompt construction.
+- Role prompting.
+- Audience targeting.
+- Context injection.
+- Structured prompting.
+- Constraint-based prompting.
+- Iterative prompt refinement.
+
+### Cybersecurity
+
+- Security policy interpretation.
+- Security awareness communication.
+- Policy-to-guidance translation.
+- Security requirement validation.
+- Identification of unsupported security claims.
+- Identification of policy drift.
+- Human-in-the-loop security review.
+
+### AI Security Awareness
+
+- AI output validation.
+- Source grounding.
+- Recognition of hallucination/unsupported claims.
+- Data exposure awareness.
+- Organizational AI-use considerations.
+- Security-sensitive AI usage.
 
 ---
 
-## Disclaimer
+# 11. Analyst Takeaways
 
-This portfolio lab uses a fictional Marctech organization and sanitized information for educational and demonstration purposes.
+This lab demonstrated that effective cybersecurity use of generative AI requires more than knowing how to write prompts.
 
-No real organizational credentials, confidential information, customer data, security configurations, or other sensitive information were submitted to the AI system.
+The most important lessons were:
 
-In a real-world environment, AI use should follow the organization's approved AI tools, security policies, data-classification requirements, privacy requirements, and applicable regulatory or contractual obligations.
+1. **Prompt quality affects AI output quality.**
+2. **Context and audience improve the usefulness of generated content.**
+3. **Explicit constraints can reduce unsupported or invented requirements.**
+4. **AI-generated security content should be reviewed before use.**
+5. **AI can assist with reviewing AI-generated content, but that review also requires human validation.**
+6. **Security policies should remain the authoritative source rather than the AI model.**
+7. **Sensitive organizational information should not be entered into an AI tool without authorization.**
 
+### Final Principle
+
+> **Use AI as an assistant—not as the authority.**
+
+For security-sensitive work, the authoritative policy, organizational requirements, and qualified human review remain the final controls over what is approved for use.
