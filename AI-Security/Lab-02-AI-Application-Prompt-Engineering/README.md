@@ -3,7 +3,7 @@
 
 ## Security Policy Summarization & Employee Guidance
 
-**Organization:** MarcTech
+**Organization:** Marctech
 **Role:** Junior Cybersecurity Analyst
 **AI Assistant:** Google Gemini
 **Lab Focus:** Generative AI application, prompt engineering, source grounding, human oversight, and responsible AI use
@@ -14,7 +14,7 @@
 
 This lab demonstrates the practical application of generative AI to a realistic cybersecurity workplace task.
 
-As a Junior Cybersecurity Analyst at MarcTech, I was asked to use the organization's approved generative AI assistant, Google Gemini, to assist with transforming a sanitized security policy into clear, employee-facing security guidance.
+As a Junior Cybersecurity Analyst at Marctech, I was asked to use the organization's approved generative AI assistant, Google Gemini, to assist with transforming a sanitized security policy into clear, employee-facing security guidance.
 
 The objective was not to allow AI to create, modify, or approve security policy.
 
@@ -26,7 +26,7 @@ The exercise also demonstrates how prompt engineering can improve AI output by p
 
 # 2. Real-World Scenario
 
-MarcTech maintains security policies that define expected employee behavior when using company systems and handling security-related situations.
+Marctech maintains security policies that define expected employee behavior when using company systems and handling security-related situations.
 
 Although these policies are important security controls, employees may have difficulty understanding technical or policy-oriented language.
 
@@ -47,7 +47,7 @@ The workflow must ensure that:
 
 # 3. Controlled Security Policy Source
 
-The following fictional MarcTech security policy is the **controlled source for all activities in this lab**.
+The following fictional Marctech security policy is the **controlled source for all activities in this lab**.
 
 AI-generated outputs will be evaluated against this source to determine whether requirements were:
 
@@ -61,7 +61,7 @@ Using a consistent source allows the analyst to evaluate whether prompt changes 
 
 ---
 
-## MarcTech Security Policy - Employee Security Practices
+## Marctech Security Policy - Employee Security Practices
 
 ### Authentication
 
@@ -90,7 +90,7 @@ Using a consistent source allows the analyst to evaluate whether prompt changes 
 
 For consistency, the same policy source is used throughout the four activities.
 
-No real MarcTech information is used.
+No real Marctech information is used.
 
 This fictional policy exists solely for educational and portfolio demonstration purposes.
 
@@ -174,14 +174,14 @@ By completing this lab, I will demonstrate the ability to:
 
 Establish a baseline AI response before introducing detailed prompting instructions.
 
-A simple prompt is used to determine how Gemini initially interprets and summarizes the controlled MarcTech security policy.
+A simple prompt is used to determine how Gemini initially interprets and summarizes the controlled Marctech security policy.
 
 ### Prompt Used
 
 ```text
-Summarize the following MarcTech security policy for employees.
+Summarize the following Marctech security policy for employees.
 
-MarcTech Security Policy - Employee Security Practices
+Marctech Security Policy - Employee Security Practices
 
 Authentication:
 - Employees must use MFA when accessing company systems that require it.
@@ -220,12 +220,12 @@ Security Incidents:
 
 Improve the AI response by explicitly defining the analyst's role, organizational context, target audience, and purpose.
 
-The same controlled MarcTech security policy will be provided to Gemini.
+The same controlled Marctech security policy will be provided to Gemini.
 
 ### Prompt Used
 
 ```text
-Act as a junior cybersecurity analyst supporting MarcTech.
+Act as a junior cybersecurity analyst supporting Marctech.
 
 Using only the fictional security policy provided below, create an employee-facing summary for employees with basic technical knowledge.
 
@@ -235,9 +235,9 @@ Use plain language and avoid unnecessary cybersecurity jargon.
 
 Do not create new security requirements that are not present in the source policy.
 
-Use only the following controlled MarcTech security policy:
+Use only the following controlled Marctech security policy:
 
-MarcTech Security Policy - Employee Security Practices
+Marctech Security Policy - Employee Security Practices
 
 Authentication:
 - Employees must use MFA when accessing company systems that require it.
@@ -278,14 +278,14 @@ Security Incidents:
 
 Use a structured prompt to control the format, scope, tone, and security requirements of the AI-generated employee guidance.
 
-The controlled MarcTech policy remains the source of truth.
+The controlled Marctech policy remains the source of truth.
 
 ### Prompt Used
 
 ```text
-Act as a cybersecurity awareness specialist supporting MarcTech.
+Act as a cybersecurity awareness specialist supporting Marctech.
 
-Using only the controlled MarcTech security policy provided below, create an employee-facing security guidance document.
+Using only the controlled Marctech security policy provided below, create an employee-facing security guidance document.
 
 For each policy topic:
 
@@ -314,7 +314,7 @@ Requirements:
 - If the source policy does not provide enough information to answer something, clearly identify that limitation rather than inventing an answer.
 - Use only the information contained in the controlled policy.
 
-Controlled MarcTech Security Policy:
+Controlled Marctech Security Policy:
 
 Authentication:
 - Employees must use MFA when accessing company systems that require it.
@@ -354,7 +354,7 @@ Security Incidents:
 
 ### Objective
 
-Review the AI-generated guidance against the controlled MarcTech security policy and identify potential problems before producing the final version.
+Review the AI-generated guidance against the controlled Marctech security policy and identify potential problems before producing the final version.
 
 The analyst evaluates the AI output for:
 
@@ -369,7 +369,7 @@ The analyst evaluates the AI output for:
 ### Prompt Used
 
 ```text
-Review the previous employee security guidance against the controlled MarcTech security policy.
+Review the previous employee security guidance against the controlled Marctech security policy.
 
 Identify:
 
@@ -393,7 +393,7 @@ Requirements for the revised version:
 - Clearly identify information that cannot be determined from the source policy.
 - Do not claim that information has been verified unless it was actually verified.
 
-Controlled MarcTech Security Policy:
+Controlled Marctech Security Policy:
 
 Authentication:
 - Employees must use MFA when accessing company systems that require it.
@@ -432,7 +432,7 @@ Security Incidents:
 # 8. AI-Assisted Security Workflow
 
 ```text
-Controlled MarcTech Security Policy
+Controlled Marctech Security Policy
               |
               v
       Approved AI Assistant
@@ -495,7 +495,7 @@ The analyst remains responsible for reviewing the output.
 
 ## AI Is Not the Source of Truth
 
-The controlled MarcTech security policy remains the authoritative source for this exercise.
+The controlled Marctech security policy remains the authoritative source for this exercise.
 
 AI-generated content must not override the source policy.
 
@@ -587,7 +587,7 @@ The analyst remains accountable for the accuracy, security, and appropriateness 
 
 ## Disclaimer
 
-This portfolio lab uses a fictional MarcTech organization and sanitized information for educational and demonstration purposes.
+This portfolio lab uses a fictional Marctech organization and sanitized information for educational and demonstration purposes.
 
 No real organizational credentials, confidential information, customer data, security configurations, or other sensitive information were submitted to the AI system.
 
