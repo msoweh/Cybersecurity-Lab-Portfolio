@@ -12,12 +12,12 @@ The lab also demonstrates an important responsible-AI practice: **AI-generated c
 
 ## Real-World Scenario
 
-**Organization:** MarcTech
+**Organization:** Marctech
 **Role:** Security Analyst / IAM Analyst
 **Security Domain:** Identity & Access Management
 **Security Topic:** Multi-Factor Authentication (MFA)
 
-MarcTech is strengthening its identity security controls by requiring MFA for workforce access.
+Marctech is strengthening its identity security controls by requiring MFA for workforce access.
 
 As part of the security team's work, an analyst may need to:
 
@@ -88,7 +88,7 @@ Use generative AI to explain a cybersecurity concept clearly to a nontechnical a
 
 ### Scenario
 
-MarcTech is introducing mandatory MFA to protect employee accounts and company information. Employees need a simple explanation of what MFA is, why it is required, and what they can expect during authentication.
+Marctech is introducing mandatory MFA to protect employee accounts and company information. Employees need a simple explanation of what MFA is, why it is required, and what they can expect during authentication.
 
 ### AI Application
 
@@ -96,7 +96,7 @@ The AI was used to explain:
 
 * What MFA is.
 * The three major authentication factor categories.
-* Why MarcTech requires MFA.
+* Why Marctech requires MFA.
 * How MFA affects employees during normal authentication.
 
 ### Result
@@ -117,7 +117,7 @@ Evaluate how additional role and organizational context affects the usefulness o
 
 ### Scenario
 
-The analyst was placed in the role of an entry-level IT support technician assisting MarcTech employees with MFA-related access problems.
+The analyst was placed in the role of an entry-level IT support technician assisting Marctech employees with MFA-related access problems.
 
 ### AI Application
 
@@ -158,7 +158,7 @@ Use generative AI to analyze both the security benefits and limitations of MFA w
 
 ### AI Application
 
-The AI was instructed to act as a senior cybersecurity analyst reviewing MarcTech's MFA security posture.
+The AI was instructed to act as a senior cybersecurity analyst reviewing Marctech's MFA security posture.
 
 The assessment considered:
 
@@ -338,7 +338,7 @@ an AI service.
 ### Lab Practice
 
 For this lab, AI interactions were limited to **non-sensitive,
-simulated MarcTech information and cybersecurity concepts**.
+simulated Marctech information and cybersecurity concepts**.
 
 No real organizational credentials, secrets, PII, confidential
 business information, or production security data were used.
