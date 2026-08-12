@@ -369,7 +369,8 @@ The analyst evaluates the AI output for:
 ### Prompt Used
 
 ```text
-Review the previous employee security guidance against the controlled Marctech security policy.
+Review the previous employee security guidance against the controlled
+Marctech security policy.
 
 Identify:
 
@@ -380,35 +381,53 @@ Identify:
 5. Any instructions that could be misunderstood by employees.
 6. Any terminology that is unnecessarily technical.
 
-For each issue, explain why it should be corrected.
+For each issue identified:
 
-Then produce a revised employee guidance document.
+- Quote or identify the relevant statement from the previous response.
+- Compare it with the applicable requirement in the source policy.
+- Explain why the statement should be corrected.
+- State whether the issue is an omission, unsupported addition,
+  changed meaning, ambiguity, or terminology issue.
+
+If no issue exists for a category, explicitly state that no issue
+was identified.
+
+After completing the review, produce a revised employee guidance
+document.
 
 Requirements for the revised version:
 
-- Remain faithful to the original policy.
+- Remain faithful to the controlled Marctech security policy.
 - Do not introduce new security requirements.
 - Do not remove required security actions.
+- Do not broaden or change the meaning of policy requirements.
 - Use clear employee-friendly language.
-- Clearly identify information that cannot be determined from the source policy.
-- Do not claim that information has been verified unless it was actually verified.
+- Avoid unnecessary technical terminology.
+- Clearly identify information that cannot be determined from the
+  source policy.
+- Do not claim that information has been verified unless it was
+  actually verified.
 
 Controlled Marctech Security Policy:
 
 Authentication:
+
 - Employees must use MFA when accessing company systems that require it.
 - Employees must never approve an unexpected MFA authentication request.
 - Suspected MFA compromise must be reported to the IT/Security team.
 
 Phishing:
+
 - Employees must not provide company credentials in response to unsolicited requests.
 - Suspicious messages should be reported through the organization's approved reporting process.
 
 Removable Media:
+
 - Employees must not connect unknown or unauthorized removable media to company systems.
 - Company-approved removable media must be handled according to organizational security procedures.
 
 Security Incidents:
+
 - Employees must promptly report suspected security incidents.
 - Employees should preserve relevant information and avoid attempting unauthorized investigation or remediation.
 ```
