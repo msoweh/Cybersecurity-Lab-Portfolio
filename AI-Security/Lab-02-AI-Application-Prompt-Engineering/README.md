@@ -1,4 +1,4 @@
-# Lab 02 — AI Application & Prompt Engineering
+# Lab 02 - AI Application & Prompt Engineering
 
 **Project:** AI-Security  
 **Organization:** Marctech *(fictional organization)*  
@@ -68,7 +68,7 @@ The following fictional policy was used as the controlled source throughout the 
 
 ---
 
-# 4. Activity 1 — Baseline AI Policy Summary
+# 4. Activity 1 - Baseline AI Policy Summary
 
 ## Objective
 
@@ -94,11 +94,11 @@ A basic prompt can produce a generally reasonable response, but the output may n
 
 ### Evidence
 
-[View Screenshot — Baseline Policy Summary](./Screenshots/01-Baseline-Policy-Summary.png)
+[View Screenshot - Baseline Policy Summary](https://github.com/msoweh/IT-Cybersecurity-Portfolio/blob/main/AI-Security/Lab-02-AI-Application-Prompt-Engineering/Screenshots/01-Baseline-Policy-Summary.png)
 
 ---
 
-# 5. Activity 2 — Role, Audience & Context Prompting
+# 5. Activity 2 - Role, Audience & Context Prompting
 
 ## Objective
 
@@ -136,11 +136,11 @@ This demonstrated that **better prompting improves usefulness but does not guara
 
 ### Evidence
 
-[View Screenshot — Role, Audience & Context Prompt](./Screenshots/02-Role-Audience-Context-Prompt.png)
+[View Screenshot - Role, Audience & Context Prompt](https://github.com/msoweh/IT-Cybersecurity-Portfolio/blob/main/AI-Security/Lab-02-AI-Application-Prompt-Engineering/Screenshots/02-Role-Audience-Context-Prompt.png)
 
 ---
 
-# 6. Activity 3 — Structured Output & Security Constraints
+# 6. Activity 3 - Structured Output & Security Constraints
 
 ## Objective
 
@@ -177,11 +177,11 @@ The exercise also reinforced an important security principle:
 
 ### Evidence
 
-[View Screenshot — Structured Policy Guidance](./Screenshots/03-Structured-Policy-Guidance.png)
+[View Screenshot - Structured Policy Guidance](https://github.com/msoweh/IT-Cybersecurity-Portfolio/blob/main/AI-Security/Lab-02-AI-Application-Prompt-Engineering/Screenshots/03-Structured-Policy-Guidance.png)
 
 ---
 
-# 7. Activity 4 — Human Review & Iterative Prompt Refinement
+# 7. Activity 4 - Human Review & Iterative Prompt Refinement
 
 ## Objective
 
@@ -250,7 +250,7 @@ This demonstrated that **AI can assist with reviewing AI-generated content, but 
 
 ### Evidence
 
-[View Screenshot — Human Review & Prompt Refinement](./Screenshots/04-Human-Review-Prompt-Refinement.png)
+[View Screenshot - Human Review & Prompt Refinement](https://github.com/msoweh/IT-Cybersecurity-Portfolio/blob/main/AI-Security/Lab-02-AI-Application-Prompt-Engineering/Screenshots/04-Human-Review-Prompt-Refinement.png)
 
 ---
 
@@ -363,6 +363,6 @@ The most important lessons were:
 
 ### Final Principle
 
-> **Use AI as an assistant—not as the authority.**
+> **Use AI as an assistant-not as the authority.**
 
 For security-sensitive work, the authoritative policy, organizational requirements, and qualified human review remain the final controls over what is approved for use.
